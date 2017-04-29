@@ -18,7 +18,7 @@ namespace GuitarHero.Songlist
 
         [NonSerialized] public ZzCollection214<string, int> Class2140 = new ZzCollection214<string, int>();
 
-        public int CustomBitMask;
+        public ulong CustomBitMask;
 
         public bool HideUsed;
 

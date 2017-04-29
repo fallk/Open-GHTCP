@@ -19,7 +19,7 @@ namespace GuitarHero.Setlist
 
         public List<Gh3Tier> Tiers = new List<Gh3Tier>();
 
-        public int CustomBit;
+        public ulong CustomBit;
 
         public Gh3Setlist()
         {

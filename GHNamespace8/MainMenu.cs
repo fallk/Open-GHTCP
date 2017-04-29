@@ -1934,7 +1934,7 @@ namespace GHNamespace8
                 return;
                 SKIPIT:
                 i++;
-                if (i >= 32)
+                if (i >= 256)
                 {
                     goto IL_7E;
                 }
@@ -4117,8 +4117,8 @@ namespace GHNamespace8
                                         }*/
                                         for (var i = 0;;)
                                         {
-                                            var num = 1 << i;
-                                            if (!((_gh3Songlist.CustomBitMask & num) == 0))
+                                            ulong num = 1UL << i;
+                                            if (!((_gh3Songlist.CustomBitMask & num) == 0U))
                                                 goto SKIPIT;
 
                                             _gh3Songlist.CustomBitMask |= (gH3Setlist.CustomBit = num);
@@ -4142,7 +4142,7 @@ namespace GHNamespace8
 
                                             SKIPIT:
                                             i++;
-                                            if (i >= 32)
+                                            if (i >= 256)
                                                 goto IL_666;
                                         }
                                     }
